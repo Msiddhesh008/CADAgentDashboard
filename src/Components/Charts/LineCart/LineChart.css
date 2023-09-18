@@ -1,0 +1,34 @@
+.lineChart{
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    height: 300px;
+}
+.chart-cnt{
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+
+element.style {
+    display: block;
+    box-sizing: border-box;
+    height: 165px;
+    width: 400px !important;
+}
+.clients {
+    position: absolute;
+    color: #636060;
+    font-size: 11px;
+    left: 12px;
+    top: 4px;
+}
+.days{
+    position: absolute;
+    color: #636060;
+    font-size: 11px;
+    right: 12px;
+    bottom: -16px;
+
+}

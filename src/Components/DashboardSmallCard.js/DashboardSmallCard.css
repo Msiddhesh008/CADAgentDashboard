@@ -1,0 +1,35 @@
+.parrent{
+    cursor: grab;
+    transition: all 0.1s;
+}
+.parrent:hover{
+    transform: scale(1.02);
+}
+.dashboard-small-cards{
+    /* width: 22%; */
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    height: 150px;
+    /* border-radius: 5px; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    padding: 1rem;
+  }
+
+.icon{
+    background-color: #548CFF;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.dashboard-small-cards p{
+    font-size: 14px;
+    color: #4A5057;
+}
+.dashboard-small-cards h2,
+.dashboard-small-cards h6{
+    color: #4A5057;
+}
+
+
+
+
