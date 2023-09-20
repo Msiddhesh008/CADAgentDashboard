@@ -1,0 +1,11 @@
+.generate-tickets-chat-screen{
+    position: relative;
+
+}
+.generate-tickets-chat-screen::-webkit-scrollbar{
+    display: none;
+}
+.chat-input{
+    position: absolute;
+    bottom: 0;
+}

@@ -11,10 +11,13 @@ const SupportComponent = ({handleChange}) => {
   const handleOpen = () => setOpen(true);
   const [ generateTicketsScreen, setGenerateTicketsScreen ] = useState(false)
 
+  const handleGenerateToggleScreen = () => {
+    setGenerateTicketsScreen(!generateTicketsScreen)
+  }
 
   return (
     generateTicketsScreen ? (
-      <GenerateNewTickets />
+      <GenerateNewTickets  handleGenerateToggleScreen={handleGenerateToggleScreen} />
     ) : (
       <Paper className='pt-5 pb-5 ps-3 d-flex flex-column h-100' square>
         <TextField
@@ -40,7 +43,7 @@ const SupportComponent = ({handleChange}) => {
         />
         <div className="col-11 col-md-7 mt-5 d-flex justify-content-between">
           <div 
-          onClick={() => setGenerateTicketsScreen(!generateTicketsScreen)}
+          onClick={handleGenerateToggleScreen}
           style={{ width: "48%" }} 
           className="pt-4">
             <PrimaryButton
