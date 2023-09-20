@@ -57,6 +57,7 @@ const Sidebar = ({ children }) => {
           Lorem ipsum dolor sit Praesentium, repellendus!
         </span>
         <PrimaryButton
+          variant="contained"
           title="Upgrade Plan"
           path="/upgrade-plan"
           padding="0.4rem 2rem"

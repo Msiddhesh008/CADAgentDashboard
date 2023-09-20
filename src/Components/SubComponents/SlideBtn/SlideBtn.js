@@ -1,4 +1,5 @@
 import React from 'react';
+import "./SlideBtn.css"
 import { AiOutlineAppstore } from 'react-icons/ai';
 import { FaTasks, FaWpforms } from 'react-icons/fa';
 import { LuContact } from 'react-icons/lu';

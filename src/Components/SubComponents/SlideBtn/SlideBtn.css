@@ -1,0 +1,24 @@
+
+.slidebtn{
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #191D88;
+  }
+  .slidebtn:hover,
+  .icons:hover {
+    /* background-color: var(--royal-blue); */
+    color: #548CFF;
+    font-weight: 400;
+  }
+  .active{
+    background-color: var(--royal-blue);
+    color: #ffffff;
+  }
+  
+  .slidebtn.active:hover{
+    background-color: var(--royal-blue);
+    color: #ffffff;
+    font-weight: normal;
+  }
