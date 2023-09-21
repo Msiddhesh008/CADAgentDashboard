@@ -18,6 +18,8 @@ const Header = () => {
         return "Task";
       case "/contacts":
         return "Contacts";
+        case "/form":
+          return "Form";
       case "/chats":
         return "Chats";
       case "/settings":

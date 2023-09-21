@@ -63,6 +63,11 @@ const SideBar2 = ({ children }) => {
       icon: "LuContact",
     },
     {
+      title: "Form",
+      path: "/form",
+      icon: "HiOutlineDocumentText",
+    },
+    {
       title: "Chat",
       path: "/chats",
       icon: "BsChatSquareText",

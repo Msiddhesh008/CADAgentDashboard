@@ -16,6 +16,7 @@ import AccountsSecurity from './Pages/AccountSecurity/AccountsSecurity'
 import Notifications from './Pages/Notifications/Notifications'
 import UpgradePlan from './Pages/UpgradePlan/UpgradePlan'
 import SideBar from './Components/SideBar/SideBar'
+import Form from './Pages/Form/Form'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Route path='/' element={<Dashboard />} />
         <Route path='/task' element={<Task />} />
         <Route path='/contacts' element={<Contact />} />
+        <Route path='/form' element={<Form />} />
         <Route path='/chats' element={<Chat />} />
         <Route path='/settings' element={<Settings />} />
         <Route path='/support' element={<Support />} />

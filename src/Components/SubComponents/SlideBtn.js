@@ -1,11 +1,9 @@
 import React from 'react';
-import "./SlideBtn.css"
 import { AiOutlineAppstore } from 'react-icons/ai';
 import { FaTasks, FaWpforms } from 'react-icons/fa';
 import { LuContact } from 'react-icons/lu';
 import { BsChatSquareText } from 'react-icons/bs';
 import { FiSettings } from 'react-icons/fi';
-import { HiOutlineDocumentText } from 'react-icons/hi';
 import { NavLink } from 'react-router-dom';
 
 
@@ -19,8 +17,7 @@ function SlideBtn({ iconName, size, title, path }) {
     FaWpforms:FaWpforms,
     LuContact:LuContact,
     BsChatSquareText:BsChatSquareText,
-    FiSettings:FiSettings,
-    HiOutlineDocumentText:HiOutlineDocumentText
+    FiSettings:FiSettings
 
     // Add more icons here if needed
   };
