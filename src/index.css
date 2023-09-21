@@ -5,7 +5,7 @@
   --secondary-color: #4CCD8D; /* Define your secondary color */
   --royal-blue:#191D88;
   --text-color: #4A5057; /* Define your text color */
-  --text-dark: #4A5057;
+  --text-dark: #292929;
   --background-color: #F2F2F7; /* Define your background color */
   --accent-color: #ff5722; /* Define an accent color */
   --shadow-color:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -30,12 +30,6 @@ body{
 .text-small{
   font-size: 14px !important;
 }
-.text-medium{
-  font-size: 16px !important;
-}
-.text-large{
-  font-size: 18px !important;
-}
 .text-decoration-none{
   text-decoration: none !important;
 }
@@ -46,4 +40,61 @@ body{
   /* padding: 0.4rem 2rem; */
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
+  transition: all 0.5s;
+}
+.header{
+  /* width: 100%; */
+  /* background-color: #ffffff; */
+  
+}
+
+.sidebar{
+  /* text-decoration: none; */
+  /* width: 20%; */
+  /* transform: translateX(-22%); */
+  /* height: 100%; */
+  background-color: #ffffff;
+  
+  border-right: 1px solid #E4E4E4 ;
+  overflow-y: scroll;
+
+}
+.sidebar::-webkit-scrollbar{
+  width: 0.3rem;
+  background-color: #FFFFFF;
+}
+.sidebar::-webkit-scrollbar-thumb{
+  background-color: #e9e9e9;
+}
+
+.logo-cnt{
+  background-color: #ffffff;
+}
+.slidebtn{
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #191D88;
+}
+.slidebtn:hover,
+.icons:hover {
+  /* background-color: var(--royal-blue); */
+  color: #548CFF;
+  font-weight: 400;
+}
+.active{
+  background-color: var(--royal-blue);
+  color: #ffffff;
+}
+
+.slidebtn.active:hover{
+  background-color: var(--royal-blue);
+  color: #ffffff;
+  font-weight: normal;
 }
