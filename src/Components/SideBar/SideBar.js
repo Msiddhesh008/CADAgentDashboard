@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import SlideBtn from "../SubComponents/SlideBtn";
+import "./Sidebar.css"
+import SlideBtn from "../SubComponents/SlideBtn/SlideBtn";
 import logo from "../../Images/logo.png";
 import Accordion from "../SubComponents/Accordion";
 import upgradeLogo from "../../Images/upgradeLogo.png";
@@ -69,15 +70,15 @@ const SideBar2 = ({ children }) => {
   ];
 
   return (
-    <div className="app d-flex w-100">
+    <div className="sidebar d-flex w-100">
       <div
         style={{
-          width: isMenuVisible ? "6%" : "22%",
+          width: isMenuVisible ? "6%" : "20%",
           transition: "0.3s ease-in-out",
         }}
         className="d-none sidebar pb-3 d-lg-flex ps-2 pe-1 flex-column justify-content-between"
       >
-        <div className="side-top gap-3 mt-3 d-flex flex-column justify-content-center">
+        <div className="side-top gap-2 mt-3 d-flex flex-column justify-content-center">
           <div className="logo-cnt p-4 d-flex align-items-center  justify-content-center w-100">
             <img
               style={{
@@ -134,8 +135,12 @@ const SideBar2 = ({ children }) => {
           <div className="mini-upgrade-card  d-flex gap-3 flex-column align-items-center">
             <img src={upgradeLogo} alt="" />
             <LiaArrowAltCircleRight
+            style={{
+              backgroundColor:"#4CCD8D"
+            }}
               className="mini-upgrade-btn pointer rounded-3 p-1 fw-bold"
               size={40}
+              color="#ffffff"
             />
           </div>
         ) : (
@@ -143,7 +148,7 @@ const SideBar2 = ({ children }) => {
           style={{
             backgroundColor:"#F1F6FF"
           }}
-          className="upgrade-card  rounded-3 pt-4 pb-4 gap-3 mt-3 w-100 d-flex flex-column align-items-center ">
+          className="upgrade-card  rounded-3 pt-4 pb-4 gap-3 mt-2 w-100 d-flex flex-column align-items-center ">
             <img src={upgradeLogo} width={40} alt="logo" />
             <span className="fs-5">Upgrade Plan</span>
             <span className="text-center text-small text-dark">

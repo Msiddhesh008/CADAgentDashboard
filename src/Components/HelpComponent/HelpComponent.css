@@ -1,0 +1,9 @@
+
+.help-component{
+    background-color: #ffffff;
+}
+
+
+.help-component::-webkit-scrollbar{
+    display: none;
+}

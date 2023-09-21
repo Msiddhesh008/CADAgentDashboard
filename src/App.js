@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Components/Header'
 import { Route, Routes } from 'react-router-dom'
 import Dashboard from './Pages/Dashboard/Dashboard'
-import Chart from './Chats/Chat'
+import Chat from './Chats/Chat'
 import Task from './Pages/Task/Task'
 import Contact from './Pages/Contact/Contact'
 import Settings from './Pages/Settings/Settings'
@@ -28,7 +28,7 @@ function App() {
         <Route path='/' element={<Dashboard />} />
         <Route path='/task' element={<Task />} />
         <Route path='/contacts' element={<Contact />} />
-        <Route path='/chats' element={<Chart />} />
+        <Route path='/chats' element={<Chat />} />
         <Route path='/settings' element={<Settings />} />
         <Route path='/support' element={<Support />} />
         <Route path='/user' element={<User />} />
