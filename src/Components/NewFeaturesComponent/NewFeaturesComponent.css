@@ -1,0 +1,8 @@
+textarea {
+    overflow-y: hidden;
+    height: 10rem;
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    resize: none;
+  }

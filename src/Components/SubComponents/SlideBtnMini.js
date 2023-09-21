@@ -5,6 +5,8 @@ import { FaTasks, FaWpforms } from 'react-icons/fa';
 import { LuContact } from 'react-icons/lu';
 import { BsChatSquareText } from 'react-icons/bs';
 import { FiSettings } from 'react-icons/fi';
+import { GrDocumentText } from 'react-icons/gr'
+import { HiOutlineDocumentText } from 'react-icons/hi'
 
 const SlideBtnMini = ({ iconName, size, path, isMenuVisible}) => {
     // Create a mapping of icon names to the actual icon components
@@ -14,7 +16,9 @@ const SlideBtnMini = ({ iconName, size, path, isMenuVisible}) => {
       FaWpforms:FaWpforms,
       LuContact:LuContact,
       BsChatSquareText:BsChatSquareText,
-      FiSettings:FiSettings
+      FiSettings:FiSettings,
+      GrDocumentText:GrDocumentText,
+      HiOutlineDocumentText:HiOutlineDocumentText
       // Add more icons here if needed
     };
   
