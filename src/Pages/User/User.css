@@ -1,0 +1,24 @@
+.table-heading{
+    padding: 5px 12px;
+}
+
+.search-input{
+    border: none;
+    font-size: 14px;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 5px 12px;
+}
+
+.sc-ikkxIA{ display: none !important;}
+
+.filter-category{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto 22px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 3px;
+}
