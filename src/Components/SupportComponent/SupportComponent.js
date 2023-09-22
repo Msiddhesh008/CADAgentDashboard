@@ -30,10 +30,10 @@ const SupportComponent = ({handleChange}) => {
           sx={{
             backgroundColor: "#F4F4FE",
             '& .MuiOutlinedInput-notchedOutline': {
-              border: 'none', // Remove the border
+              border: 'none', 
             },
             'label': {
-              fontSize: '16px', // Adjust the font size as needed
+              fontSize: '16px', 
             },
           }}
           className='col-11 col-md-7 text-small'

@@ -25,19 +25,19 @@ const Header = () => {
       case "/settings":
         return "Settings";
       case "/support":
-        return "Support";
+        return "Setting » Support";
       case "/user":
-        return "User";
+        return "Setting » User";
       case "/subscription":
-        return "Subscription";
+        return "Setting » Subscription";
       case "/tags":
-        return "Tags";
+        return "Setting » Tags";
       case "/company-branding":
-        return "Company Branding";
+        return "Setting » Company Branding";
       case "/accounts-security":
-        return "Accounts & Security";
+        return "Setting » Accounts & Security";
       case "/notification":
-        return "Notifications";
+        return "Setting » Notifications";
       case "/upgrade-plan":
         return "Upgrade Plan";
 
@@ -66,7 +66,7 @@ const Header = () => {
           onClick={toggleMenu}
           className="menu pointer"
         />
-        <span style={{ color: "#4A5057" }} className=" fs-6">
+        <span style={{ color: "#4A5057" }} className=" text-medium mt-2">
           {title}
         </span>
       </div>

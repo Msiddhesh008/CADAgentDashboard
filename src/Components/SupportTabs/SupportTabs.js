@@ -5,7 +5,7 @@ import Tab from '@mui/material/Tab';
 import { Paper } from '@mui/material';
 
 export default function SupportTabs() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -17,7 +17,7 @@ export default function SupportTabs() {
     }} elevation={0} square>
       <Tabs value={value} onChange={handleChange} centered>
         <Tab label="Support" style={{ width: '25%', textTransform: 'none', fontSize:"16px" }} />
-        <Tab label="FAQ's" style={{ width: '25%', textTransform: 'none', fontSize:"16px" }} />
+        <Tab label="FAQ'" style={{ width: '25%', textTransform: 'none', fontSize:"16px" }} />
         <Tab label="New Features Request" style={{ width: '25%', textTransform: 'none', fontSize:"16px" }} />
         <Tab label="Help & Guid" style={{ width: '25%', textTransform: 'none', fontSize:"16px" }} />
       </Tabs>

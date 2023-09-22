@@ -5,7 +5,7 @@ import { FaTasks, FaWpforms } from 'react-icons/fa';
 import { LuContact } from 'react-icons/lu';
 import { BsChatSquareText } from 'react-icons/bs';
 import { FiSettings } from 'react-icons/fi';
-import { HiOutlineDocumentText } from 'react-icons/hi';
+import { IoDocumentTextOutline } from 'react-icons/io5';
 import { NavLink } from 'react-router-dom';
 
 
@@ -20,7 +20,7 @@ function SlideBtn({ iconName, size, title, path }) {
     LuContact:LuContact,
     BsChatSquareText:BsChatSquareText,
     FiSettings:FiSettings,
-    HiOutlineDocumentText:HiOutlineDocumentText
+    IoDocumentTextOutline:IoDocumentTextOutline
 
     // Add more icons here if needed
   };

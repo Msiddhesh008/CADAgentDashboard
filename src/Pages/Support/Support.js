@@ -8,6 +8,7 @@ import FAQ from '../../Components/FAQ/FAQ';
 import NewFeaturesComponent from '../../Components/NewFeaturesComponent/NewFeaturesComponent'
 import HelpComponent from '../../Components/HelpComponent/HelpComponent'
 
+
 const Support = () => {
   const [value, setValue] = React.useState(0);
 

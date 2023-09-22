@@ -7,6 +7,7 @@ import { BsChatSquareText } from 'react-icons/bs';
 import { FiSettings } from 'react-icons/fi';
 import { GrDocumentText } from 'react-icons/gr'
 import { HiOutlineDocumentText } from 'react-icons/hi'
+import { IoDocumentTextOutline } from 'react-icons/io5';
 
 const SlideBtnMini = ({ iconName, size, path, isMenuVisible}) => {
     // Create a mapping of icon names to the actual icon components
@@ -18,7 +19,7 @@ const SlideBtnMini = ({ iconName, size, path, isMenuVisible}) => {
       BsChatSquareText:BsChatSquareText,
       FiSettings:FiSettings,
       GrDocumentText:GrDocumentText,
-      HiOutlineDocumentText:HiOutlineDocumentText
+      IoDocumentTextOutline:IoDocumentTextOutline
       // Add more icons here if needed
     };
   

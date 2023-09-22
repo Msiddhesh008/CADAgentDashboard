@@ -11,7 +11,7 @@ import SlideBtnMini from "../SubComponents/SlideBtnMini";
 import { LiaArrowAltCircleRight } from "react-icons/lia";
 import { Paper } from "@mui/material";
 
-const SideBar2 = ({ children }) => {
+const SideBar = ({ children }) => {
   const { isMenuVisible } = useContext(GlobalStateContext);
 
   
@@ -65,7 +65,7 @@ const SideBar2 = ({ children }) => {
     {
       title: "Form",
       path: "/form",
-      icon: "HiOutlineDocumentText",
+      icon: "IoDocumentTextOutline",
     },
     {
       title: "Chat",
@@ -174,4 +174,4 @@ const SideBar2 = ({ children }) => {
   );
 };
 
-export default SideBar2;
+export default SideBar;
