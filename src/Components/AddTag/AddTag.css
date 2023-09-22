@@ -1,0 +1,14 @@
+input{
+    width: 100%;
+    font-size: 16px;
+    padding: 6px;
+    border:1px solid #A4A4A4;
+    border-radius: 4px;
+}
+input:nth-child(1){
+    width: 95%;
+
+}
+input:focus{
+    outline: none;
+}

@@ -169,7 +169,11 @@ const SideBar = ({ children }) => {
         )}
       </div>
 
-      <div className="w-100 d-flex flex-column">{children}</div>
+      <div 
+      style={{
+        backgroundColor:"#F2F2F7"
+      }}
+      className="w-100 d-flex flex-column">{children}</div>
     </div>
   );
 };

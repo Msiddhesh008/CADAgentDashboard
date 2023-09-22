@@ -18,9 +18,11 @@ const Support = () => {
 
   return (
     <div className='support w-100 h-100 d-flex flex-column '>
+    
     <Paper style={{
         width: "100%"
     }} elevation={0} square>
+      
       <Tabs value={value} onChange={handleChange} centered>
         <Tab label="Support" style={{ width: '25%', textTransform: 'none', fontSize:"16px" }} />
         <Tab label="FAQ's" style={{ width: '25%', textTransform: 'none', fontSize:"16px" }} />

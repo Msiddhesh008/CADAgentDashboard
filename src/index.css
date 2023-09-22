@@ -11,14 +11,18 @@
   --shadow-color:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   --border-color-two: 0px 2.33194px 4.66389px 0px rgba(77, 77, 77, 0.25);
 }
+*{
+
+  font-family: 'Open Sans', sans-serif;
+}
 
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #F2F2F7;
-  font-family: 'Open Sans', sans-serif;
 }
+
 
 .text-dark{
   font-weight: 400;
