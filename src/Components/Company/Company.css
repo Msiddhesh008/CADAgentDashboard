@@ -1,0 +1,49 @@
+.uploder h4 {
+    font-size: 16px;
+    color: #4A5057;
+    font-weight: 600;
+}
+.file-drop-zone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .file-drop-zone.drag-over {
+    background-color: #f0f0f0;
+  }
+  .uploder p {
+    font-weight: 400;
+    color: #545454;
+}
+.uploder {
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    padding: 24px 16px 32px 17px;
+    margin-bottom: 22px;
+}
+.uploder p.box {
+    border: 1px solid #0000002b;
+    padding: 15px 20px 50px 16px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #131313;
+}
+.uploder .file-drop-zone {
+    border: 1px dashed #ccc;
+    padding: 36px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 9px;
+    margin: 39px 70px 0 75px;
+    
+}
+.comp-btn a {
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 48px;
+    text-decoration: none;
+}
