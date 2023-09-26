@@ -150,7 +150,7 @@ const User = () => {
               fontSize: "15px", // Adjust the font size as needed
             },
           }}
-          className="col-11 col-md-7 text-small"
+          className="col-11 col-md-7 text-small hello"
           id="outlined-basic"
           label="Search"
           variant="outlined" 
