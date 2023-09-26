@@ -2,3 +2,11 @@
     color: #4A5057 !important;
     font-weight: bold !important;
 }
+.tag-table::-webkit-scrollbar{
+    width: 0.3rem;
+    background-color: #FFFFFF;
+  }
+
+.tag-table::-webkit-scrollbar-thumb{
+    background-color: #e9e9e9;
+  }
