@@ -10,6 +10,8 @@ import Paper from '@mui/material/Paper';
 import Switch from '@mui/material/Switch';
 
 export default function BasicTable({rows, handleSwitchChange, handleDelete}) {
+  
+  
     
   return (
     <TableContainer component={Paper}>
@@ -26,7 +28,7 @@ export default function BasicTable({rows, handleSwitchChange, handleDelete}) {
         <TableBody>
           {rows.map((row, index) => (
             <TableRow
-              key={row.index}
+              key={row.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell align='left' component="th" scope="row">
@@ -37,14 +39,18 @@ export default function BasicTable({rows, handleSwitchChange, handleDelete}) {
               <TableCell align="center">
                 <Switch
                   checked={row.status}
-                  onChange={() => handleSwitchChange(row.index)}
+                  onChange={
+                    () => handleSwitchChange(index)
+                  }
                   name={`customSwitch${row.index}`}
                   color="primary"
                 />
               </TableCell>
               <TableCell
-              
-              onClick={() => handleDelete(index)}
+              onClick={() => {
+                handleDelete(row.id)
+                console.log(row.id)
+              }}
               align="center">{row.action}</TableCell>
             </TableRow>
           ))}

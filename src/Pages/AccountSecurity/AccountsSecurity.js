@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Account from '../../Components/Account/Account'
 import Checkbox from '@mui/material/Checkbox';
-import { Paper } from '@mui/material';
+import { Button, Paper } from '@mui/material';
 import './AccountsSecurity.css'
 import AccountInner from '../../Components/Account/AccountInner';
 
@@ -44,10 +44,10 @@ const AccountsSecurity = () => {
             </div>
           </Paper>
           <div style={{display:'flex',justifyContent:'center',marginTop:'40px',marginBottom:'5rem'}}>
-            <button 
+            <Button 
             onClick={handleCloseAccount}
-            style={{border:'none',color:'#fff',backgroundColor:'#DE5753',padding:'11px 98px',fontSize:'18px',borderRadius:'5px'}}>
-              Close Account</button>
+            style={{border:'none',color:'#fff',backgroundColor:'#DE5753',padding:'11px 98px',fontSize:'18px',borderRadius:'5px', height:"40px", textTransform:"none"}}>
+              Close Account</Button>
           </div>
         </div>
       :<AccountInner handleCloseAccount={handleCloseAccount} />}

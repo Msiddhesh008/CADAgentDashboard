@@ -12,25 +12,40 @@ const Tags = () => {
   const [addTagVisible, setAddTagVisible] = useState(false);
 
   const [rows, setRows] = useState([
-    createData(<CustomTag />, "Lorem Firfs Lorem ipsum", "10 March 2023", false, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 0),
-    createData(<CustomTag />, "Lorem ipsum Lorem ipsum", "10 March 2023", false, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 1),
-    createData(<CustomTag />, "Lorem ipsum Lorem ipsum", "10 March 2023", false, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 2),
-    createData(<CustomTag />, "Lorem ipsum Lorem ipsum", "10 March 2023", false, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 3),
-    createData(<CustomTag />, "Lorem ipsum Lorem ipsum", "10 March 2023", false, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 4),
+    createData(1, <CustomTag />, "Lorem Firfs Lorem ipsum", "10 March 2023", true, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 0),
+    createData(2, <CustomTag />, "Lorem ipsum Lorem ipsum", "10 March 2023", false, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 1),
+    createData(3, <CustomTag />, "Lorem ipsum Lorem ipsum", "10 March 2023", false, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 2),
+    createData(4, <CustomTag />, "Lorem ipsum Lorem ipsum", "10 March 2023", false, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 3),
+    createData(5, <CustomTag />, "Lorem ipsum Lorem ipsum", "10 March 2023", false, <DeleteTwoToneIcon style={{ color: "#FD394A", cursor:"pointer" }} />, 4),
   ]);
 
   const handleSwitchChange = (index) => {
-    const updatedRows = [...rows];
-    updatedRows[index].status = !updatedRows[index].status;
-    setRows(updatedRows);
+    console.log(rows);
+    if (index >= 0 && index < rows.length) {
+      const updatedRows = [...rows];
+      updatedRows[index].status = !updatedRows[index].status;
+      setRows(updatedRows);
+    }
   };
+  
 
-  function createData(name, description, createdDate, status, action, index) {
-    return { name, description, createdDate, status, action, index };
+  function createData(id, name, description, createdDate, status, action, index) {
+    return { id, name, description, createdDate, status, action, index };
   }
+
+
+  function generateUID() {
+    // Generates a random 8-character alphanumeric string
+    return Math.random().toString(36).substring(2, 10);
+  }
+  
+  // Example usage:
+  const uid = generateUID();
+  
 
   const handleAdd = () => {
     const newRow = createData(
+      uid,
       <CustomTag />,
       "Additional Item 1 Description",
       "1 March 1995",
@@ -39,12 +54,15 @@ const Tags = () => {
       rows.length
     );
     setRows((prevRows) => [...prevRows, newRow]);
+    setAddTagVisible(!addTagVisible);
   };
 
-  const handleDelete = (indexToDelete) => {
+  const handleDelete = (id) => {
     // Filter out the row with the specified index
-    const updatedRows = rows.filter((row) => row.index !== indexToDelete);
+    const updatedRows = rows.filter((row) => row.id !== id);
     setRows(updatedRows);
+    console.log(rows);
+    
   };
 
 

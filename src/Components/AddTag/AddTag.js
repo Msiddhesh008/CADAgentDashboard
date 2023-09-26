@@ -3,6 +3,7 @@ import React from 'react'
 import './AddTag.css'
 import PrimaryButton from '../PrimaryButton'
 import AddIcon from '@mui/icons-material/Add';
+import DropDown from '../DropDown/DropDown';
 
 const AddTag = ({handleAdd}) => {
   return (
@@ -15,7 +16,11 @@ const AddTag = ({handleAdd}) => {
 
         <div className="col-5">
             <Typography variant='subtitle2' className='mb-2 mt-3 typography' >Name</Typography>
-            <input type="Name" />
+            {/* <input type="Name" /> */}
+            
+            <div className='d-flex pt-2'>
+            <DropDown />
+            </div>
         </div>
         <div className="col-6 ">
             <Typography variant='subtitle2' className='mb-3 mt-3' >Value</Typography>
@@ -23,7 +28,6 @@ const AddTag = ({handleAdd}) => {
             <div className='d-flex gap-3 align-items-center'>
             <input type="Value" />
             <AddIcon
-            onPress={handleAdd}
             style={{
                 width:"40px",
                 height:"40px",
@@ -39,7 +43,7 @@ const AddTag = ({handleAdd}) => {
         </div>
 
         <div className="row justify-content-center align-items-center mt-5">
-        <div className="col-3 d-flex justify-content-between align-items-center">
+        <div className="col-md-3 col-6 col-6 d-flex justify-content-between align-items-center">
         <Button
               sx={{
                 width: "100%",
@@ -54,8 +58,9 @@ const AddTag = ({handleAdd}) => {
               Cancle
             </Button>
         </div>
-        <div className="col-3 ">
-            <PrimaryButton
+        <div className="col-md-3 col-6">
+            <PrimaryButton            
+            onClick={handleAdd}
             padding="0.5rem 2rem"
             title={"Save Changes"}
             />

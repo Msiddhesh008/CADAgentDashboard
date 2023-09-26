@@ -37,9 +37,10 @@ function SlideBtn({ iconName, size, title, path }) {
   return (
     <NavLink 
     style={{
-        textDecoration:"none"
+        textDecoration:"none",
+        fontSize:"10px"
     }}
-    to={path} className='slidebtn ps-3 d-flex align-items-center justify-content-start'>
+    to={path} className='slidebtn ps-3 d-flex  align-items-center justify-content-start'>
       <IconComponent size={size} className='icons' />
       <span className='p-2 side-button-title fs-6'>{title}</span>
     </NavLink>
