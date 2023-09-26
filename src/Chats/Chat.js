@@ -6,13 +6,15 @@ import ChatsRight from '../Components/Chat/ChatsRight';
 
 const Chat = () => {
   return (
-    <Paper elevation={2} className='m-3 w-85 h-100 p-2'>
+    <Paper elevation={2} className='chatpage m-3 w-85  p-2'>
       <Grid container spacing={2}>
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <ChatsLeft/>
         </Grid>
-        <Grid item xs={8}>
-          <ChatsRight/>
+        <Grid item xs={9} >
+          <div style={{borderLeft:'1px solid #0000002b',marginLeft:'15px'}}>
+            <ChatsRight/>
+          </div>
         </Grid>
       </Grid>
     </Paper>

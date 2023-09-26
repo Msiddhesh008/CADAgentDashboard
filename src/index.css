@@ -98,3 +98,6 @@ body{
   color: #ffffff;
   font-weight: normal;
 }
+input:focus-visible {
+  outline: none;
+}
