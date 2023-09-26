@@ -100,7 +100,7 @@ const User = () => {
   const customStyles = {
     rows: {
       style: {
-        minHeight: '50px', // override the row height
+        minHeight: "50px", // override the row height
       },
     },
     headCells: {
@@ -115,8 +115,8 @@ const User = () => {
     },
   };
 
-  const [filterText, setFilterText] = useState('');
-  const [resetPaginationToggle, setResetPaginationToggle] = useState(false);
+  const [filterText, setFilterText] = useState("");
+  const [resetPaginationToggle] = useState(false);
 
   const filteredData = data.filter((item) =>
     Object.values(item).some((value) => {
@@ -132,26 +132,25 @@ const User = () => {
 
 
   const subHeaderComponentMemo = React.useMemo(() => {
-
     return (
-      <div className='w-100'>
+      <div className="w-100">
         <TextField
-          size='small'
+          size="small"
           sx={{
             backgroundColor: "#F4F4FE",
-            width: '100%',
-            height: '37px',
-            '& .MuiOutlinedInput-notchedOutline': {
-              border: 'none', // Remove the border
+            width: "100%",
+            height: "37px",
+            "& .MuiOutlinedInput-notchedOutline": {
+              border: "none", // Remove the border
             },
-            '& input::placeholder': {
-              fontSize: '16px', // Adjust the font size as needed
+            "& input::placeholder": {
+              fontSize: "16px", // Adjust the font size as needed
             },
-            '& label': {
-              fontSize: '15px', // Adjust the font size as needed
+            "& label": {
+              fontSize: "15px", // Adjust the font size as needed
             },
           }}
-          className='col-11 col-md-7 text-small'
+          className="col-11 col-md-7 text-small"
           id="outlined-basic"
           label="Search"
           variant="outlined" 
@@ -159,12 +158,11 @@ const User = () => {
         />
       </div>
     );
-  }, [filterText, resetPaginationToggle]);
-
+  }, []);
 
   const handleExportClick = () => {
-    console.log('it works')
-    downloadCSV(data, 'movie_list.csv'); // Pass your data and the desired filename
+    console.log("it works");
+    downloadCSV(data, "movie_list.csv"); // Pass your data and the desired filename
   };
 
   const handleChange = useCallback(state => {
@@ -231,13 +229,11 @@ const User = () => {
 
 
   return (
-    <div className='bg-white'>
-      <div className='border-top border-bottom d-flex align-items-center justify-content-between p-3'>
-        <div>
-          {subHeaderComponentMemo}
-        </div>
-        <div className='d-flex gap-2'>
-          <PrimaryButton 
+    <div className="bg-white">
+      <div className="border-top border-bottom d-flex align-items-center justify-content-between p-3">
+        <div>{subHeaderComponentMemo}</div>
+        <div className="d-flex gap-2">
+          <PrimaryButton
             variant="contained"
             title="Add"
             padding="0.2rem 1.2rem"
@@ -392,7 +388,6 @@ const User = () => {
             </div>
             )}
           </div>
-
         </div>
       </div>
 
@@ -420,4 +415,4 @@ const User = () => {
   )
 }
 
-export default User
+export default User;

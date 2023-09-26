@@ -1,49 +1,50 @@
-import { Paper, TextField, Typography } from '@mui/material'
-import React from 'react'
+import { Button, Paper, TextField, Typography } from "@mui/material";
+import React from "react";
 
 const NewFeaturesComponent = () => {
   return (
-    <Paper className='m-4 p-5 pt-5'>
+    <>
+      <Paper className="m-4 p-5 pt-5">
+        <div className="row mb-4">
+          <div className="col-md-2 col-12 d-flex align-items-center gap-4">
+            <Typography variant="subtitle2">Feature Name</Typography>
+          </div>
 
-      <div className="row mb-4">
-      <div className='col-md-2 col-12 d-flex align-items-center gap-4'>
-      <Typography variant='subtitle2'>Feature Name</Typography>
+          <div className="col-md-6 col-12 d-flex align-items-center gap-4">
+            <TextField
+              fullWidth
+              id="outlined-basic"
+              label="Feature"
+              variant="outlined"
+              size="small"
+            />
+          </div>
+        </div>
 
+        <div className="row">
+          <div className="col-md-2 col-12 d-flex align-items-center gap-4">
+            <Typography variant="subtitle2">Description</Typography>
+          </div>
+
+          <div className="col-md-6 col-12 d-flex align-items-center gap-4">
+            <TextField
+              multiline
+              rows={4}
+              fullWidth
+              defaultValue="The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',"
+              label="Description"
+              id="Description"
+            />
+          </div>
+        </div>
+      </Paper>
+      <div className="row w-100 justify-content-center mt-4">
+        <div className="col-3">
+          <Button className="button-contained">Save</Button>
+        </div>
       </div>
+    </>
+  );
+};
 
-      <div className='col-md-6 col-12 d-flex align-items-center gap-4'>
-
-      <TextField 
-      fullWidth 
-      id="outlined-basic" 
-      label="Feature" 
-      variant="outlined" 
-      size="small" />
-
-      </div>
-      </div>
-
-      
-      <div className="row">
-      <div className='col-md-2 col-12 d-flex align-items-center gap-4'>
-      <Typography variant='subtitle2'>Description</Typography>
-      </div>
-      
-      <div className='col-md-6 col-12 d-flex align-items-center gap-4'>
-      <TextField 
-      multiline
-      rows={4}
-      fullWidth 
-      defaultValue="The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',"
-      label="Description" 
-      id="Description" />
-      </div>
-      </div>
-
-      
-      
-    </Paper>
-  )
-}
-
-export default NewFeaturesComponent
+export default NewFeaturesComponent;

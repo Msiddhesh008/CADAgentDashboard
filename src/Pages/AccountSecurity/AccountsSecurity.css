@@ -1,0 +1,11 @@
+.account-sec{
+    transition: all 0.3s;
+    overflow: scroll;
+}
+.account-sec::-webkit-scrollbar{
+width: 0.3rem;
+background-color: #FFFFFF;
+}
+.account-sec::-webkit-scrollbar-thumb{
+background-color: #e9e9e9;
+}
