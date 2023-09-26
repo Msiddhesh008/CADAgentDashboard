@@ -12,11 +12,11 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
+  createData('Lorenme lepsome dolor ssir amet...', "Low", "Aug 2, 2023", "Oliva Jhonson", "Completed", "Aug 2, 2023" ),
+  createData('Lorenme lepsome dolor ssir amet...', "High", "Aug 2, 2023", 37, 4.3),
+  createData('Lorenme lepsome dolor ssir amet...', "Medium", "Aug 2, 2023", 24, 6.0),
+  createData('Lorenme lepsome dolor ssir amet...', "High", "Aug 2, 2023", 67, 4.3),
+  createData('Lorenme lepsome dolor ssir amet...', "Low", "Aug 2, 2023", 49, 3.9),
 ];
 
 const TaskListView = () => {
@@ -26,11 +26,12 @@ const TaskListView = () => {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell>Task Name</TableCell>
+            <TableCell align="right">Priority</TableCell>
+            <TableCell align="right">Assigned Date</TableCell>
+            <TableCell align="right">Assigned By</TableCell>
+            <TableCell align="right">Status</TableCell>
+            <TableCell align="right">Due Date</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

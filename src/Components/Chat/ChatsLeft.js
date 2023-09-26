@@ -1,76 +1,22 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import './Chats.css';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import SearchIcon from '@mui/icons-material/Search';
+import GlobalStateProvider from '../../Contexts/GlobalStateProvider';
 
 
 const ChatsLeft = () => {
+    const { IndividualArray, setIndividualArray } = useContext(GlobalStateProvider)
+
     const [value, setValue] = React.useState(0);
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
 
-    const [IndividualArray] = useState ([
-      {
-        id:'1',
-        image:'https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80',  
-        groupicon:'',
-        name:'Amelia Johnson',
-        message:'Lorem ipsum dolor sit amet 3',
-        time:'8.45 Am',
-        mess:'14',
-        day:'Yesterday',
-      },
-      {
-        id:'2',
-        image:'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',  
-        name:'Emma Smith',
-        message:'Lorem ipsum dolor sit amet 4',
-        time:'8.45 Am',
-        mess:'7',
-        day:'Yesterday'
-      },
-      {
-        id:'3',
-        image:'https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',  
-        name:'Francis Mitcham',
-        message:'Lorem ipsum dolor sit amet 5',
-        time:'8.45 Am',
-        mess:'10',
-        day:'Yesterday'
-      },
-      {
-        id:'4',
-        image:'https://media.istockphoto.com/id/1318858332/photo/headshot-portrait-of-smiling-female-employee-posing-in-office.jpg?s=1024x1024&w=is&k=20&c=HThNP7cTwpPjRgylneAIW2VnkHDInJ27qnpjzcC4f-Y=',  
-        name:'Neil Owen',
-        message:'Lorem ipsum dolor sit amet 6',
-        time:'8.45 Am',
-        mess:'18',
-        day:'Yesterday'
-      },
-      {
-        id:'5',
-        image:'https://media.istockphoto.com/id/515005642/photo/portrait-of-smiling-young-man-over-colored-background.jpg?s=1024x1024&w=is&k=20&c=EHsFH_bN0sop9mcWCOKWDOqH29h5gh326F6bw1-joPY=',  
-        name:'Max Smith',
-        message:'Lorem ipsum dolor sit amet 7',
-        time:'8.45 Am',
-        mess:'40',
-        day:'Yesterday'
-      },
-      {
-        id:'6',
-        image:'https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80',  
-        name:'Melody Macy',
-        message:'Lorem ipsum dolor sit amet 8',
-        time:'8.45 Am',
-        mess:'9',
-        day:'Yesterday'
-      },
-    ])
-
+  
 
   return (
     <div>
