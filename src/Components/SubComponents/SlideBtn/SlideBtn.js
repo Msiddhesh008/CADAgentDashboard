@@ -5,6 +5,7 @@ import { FaTasks, FaWpforms } from 'react-icons/fa';
 import { LuContact } from 'react-icons/lu';
 import { BsChatSquareText } from 'react-icons/bs';
 import { FiSettings } from 'react-icons/fi';
+import { IoDocumentTextOutline } from 'react-icons/io5';
 import { NavLink } from 'react-router-dom';
 
 
@@ -18,7 +19,8 @@ function SlideBtn({ iconName, size, title, path }) {
     FaWpforms:FaWpforms,
     LuContact:LuContact,
     BsChatSquareText:BsChatSquareText,
-    FiSettings:FiSettings
+    FiSettings:FiSettings,
+    IoDocumentTextOutline:IoDocumentTextOutline
 
     // Add more icons here if needed
   };
@@ -35,9 +37,10 @@ function SlideBtn({ iconName, size, title, path }) {
   return (
     <NavLink 
     style={{
-        textDecoration:"none"
+        textDecoration:"none",
+        fontSize:"10px"
     }}
-    to={path} className='slidebtn ps-3 d-flex align-items-center justify-content-start'>
+    to={path} className='slidebtn ps-3 d-flex  align-items-center justify-content-start'>
       <IconComponent size={size} className='icons' />
       <span className='p-2 side-button-title fs-6'>{title}</span>
     </NavLink>

@@ -1,0 +1,55 @@
+.card1-bg{
+    background-color: #DEE6F8;
+}
+
+.card-font-color1{
+    color: #000;
+}
+
+.card-font-color2{
+    color: #292929;
+}
+
+.card-font-color3{
+    color:#4A5057;
+}
+
+.card-font1{
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-font2{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-font3{
+    font-family: Open Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-font4{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-font5{
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

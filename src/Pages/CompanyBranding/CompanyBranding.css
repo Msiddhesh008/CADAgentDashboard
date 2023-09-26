@@ -1,0 +1,10 @@
+.company-brand{
+    transition: all 0.3s;
+}
+.company-brand::-webkit-scrollbar{
+width: 0.3rem;
+background-color: #FFFFFF;
+}
+.company-brand::-webkit-scrollbar-thumb{
+background-color: #e9e9e9;
+}
