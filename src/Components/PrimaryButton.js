@@ -2,7 +2,7 @@ import { Button } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const PrimaryButton = ({ title, path, padding, fontSize, icon, variant }) => {
+const PrimaryButton = ({ title, path, padding, fontSize, icon, variant, onClick }) => {
 
 
   return (<Link
@@ -10,6 +10,7 @@ const PrimaryButton = ({ title, path, padding, fontSize, icon, variant }) => {
         >
           <Button
             startIcon={icon ? icon : null}
+            onClick={onClick}
             style={{
               padding: padding,
               backgroundColor: "#4CCD8D",
