@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AiOutlineAppstore } from 'react-icons/ai';
 import { FaTasks, FaWpforms } from 'react-icons/fa';
 import { LuContact } from 'react-icons/lu';
@@ -49,11 +49,11 @@ const Accordion = ({
       animate={controls}
       transition={{ duration: 0.5 }}
     >
-      <div onClick={toggleAccordion} className="slidebtn ps-3 d-flex align-items-center justify-content-start">
+      <Link to="/support" onClick={toggleAccordion} className="text-decoration-none slidebtn ps-3 d-flex align-items-center justify-content-start">
         <IconComponent size={size} className="icons" />
         <span className="p-2 fs-6">{title}</span>
         {isVisible ? <IoIosArrowUp /> : <IoIosArrowDown />}
-      </div>
+      </Link>
 
       <div
         style={{

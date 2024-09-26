@@ -63,7 +63,7 @@ const GenerateNewTickets = ({ handleGenerateToggleScreen }) => {
 
   const handleSend = () => {
     const sent = {
-      sender: true,
+      sender: false,
       message: text,
       time: "8:00 am",
     };

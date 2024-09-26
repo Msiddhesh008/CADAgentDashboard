@@ -1,20 +1,18 @@
 import React, { useContext } from "react";
-import "./Sidebar.css"
+import "./Sidebar.css";
 import SlideBtn from "../SubComponents/SlideBtn/SlideBtn";
-import logo from "../../Images/logo.png";
 import Accordion from "../SubComponents/Accordion";
 import upgradeLogo from "../../Images/upgradeLogo.png";
-import PrimaryButton from "../PrimaryButton";
 import GlobalStateContext from "../../Contexts/GlobalStateContext";
 import logoMini from "../../Images/logoMini.png";
 import SlideBtnMini from "../SubComponents/SlideBtnMini";
 import { LiaArrowAltCircleRight } from "react-icons/lia";
-import { Paper } from "@mui/material";
+import { Button, Paper } from "@mui/material";
+import { Link } from "react-router-dom";
 
-const SideBar2 = ({ children }) => {
-  const { isMenuVisible } = useContext(GlobalStateContext);
+const SideBar = ({ children }) => {
+  const { isMenuVisible, logo } = useContext(GlobalStateContext);
 
-  
   const dropDownLinks = [
     {
       subTitle: "Support",
@@ -63,6 +61,11 @@ const SideBar2 = ({ children }) => {
       icon: "LuContact",
     },
     {
+      title: "Form",
+      path: "/form",
+      icon: "IoDocumentTextOutline",
+    },
+    {
       title: "Chat",
       path: "/chats",
       icon: "BsChatSquareText",
@@ -87,6 +90,7 @@ const SideBar2 = ({ children }) => {
               }}
               src={logo}
               width={150}
+              height={32}
               alt=""
             />
 
@@ -120,7 +124,7 @@ const SideBar2 = ({ children }) => {
           ))}
 
           {isMenuVisible ? (
-            <SlideBtnMini path="settings" size={20} iconName="FiSettings" />
+            <SlideBtnMini path="support" size={20} iconName="FiSettings" />
           ) : (
             <Accordion
               dropLinks={dropDownLinks}
@@ -135,38 +139,46 @@ const SideBar2 = ({ children }) => {
           <div className="mini-upgrade-card  d-flex gap-3 flex-column align-items-center">
             <img src={upgradeLogo} alt="" />
             <LiaArrowAltCircleRight
-            style={{
-              backgroundColor:"#4CCD8D"
-            }}
+              style={{
+                backgroundColor: "#4CCD8D",
+              }}
               className="mini-upgrade-btn pointer rounded-3 p-1 fw-bold"
               size={40}
               color="#ffffff"
             />
           </div>
         ) : (
-          <Paper 
-          style={{
-            backgroundColor:"#F1F6FF"
-          }}
-          className="upgrade-card  rounded-3 pt-4 pb-4 gap-3 mt-2 w-100 d-flex flex-column align-items-center ">
+          <Paper
+            style={{
+              backgroundColor: "#F1F6FF",
+            }}
+            className="upgrade-card p-3  rounded-3 pt-4 pb-4 gap-3 mt-5 w-100 d-flex flex-column align-items-center "
+          >
             <img src={upgradeLogo} width={40} alt="logo" />
-            <span className="fs-5">Upgrade Plan</span>
+            <span className="fs-6">Upgrade Plan</span>
             <span className="text-center text-small text-dark">
               Lorem ipsum dolor sit Praesentium, repellendus!
             </span>
-            <PrimaryButton
-            fontSize="12px"
-              title="Upgrade Plan"
-              path="/upgrade-plan"
-              padding="0.4rem 2rem"
-            />
+
+            <Link to="/subscription">
+              <Button className="button-contained w-75" variant="contained">
+                Upgrade Plan
+              </Button>
+            </Link>
           </Paper>
         )}
       </div>
 
-      <div className="w-100 d-flex flex-column">{children}</div>
+      <div
+        style={{
+          backgroundColor: "#F2F2F7",
+        }}
+        className="w-100 d-flex flex-column"
+      >
+        {children}
+      </div>
     </div>
   );
 };
 
-export default SideBar2;
+export default SideBar;
